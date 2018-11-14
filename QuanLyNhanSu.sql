@@ -1,5 +1,4 @@
 CREATE DATABASE QuanLyNhanSu
-
 USE QuanLyNhanSu
 
 CREATE TABLE NHANVIEN
@@ -36,25 +35,10 @@ INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB
 VALUES('17211TT1738', 'TranDangKhoa', '01/01/1999', 'BinhThuan', 'Nam' , 'Kinh', 0364143265, 'CD17TT4', 'CNTT', 'HSKHA', 2000)
 
 INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211DH2014', 'NguyenThanhCong', '02/02/1999', 'NinhThuan', 'Nam' , 'Kinh', 0364548265, 'AA17TT4', 'TKDH', 'HSGIOI', 2500)
+VALUES('17211DD2014', 'NguyenThanhCong', '02/02/1999', 'NinhThuan', 'Nam' , 'Kinh', 0364548265, 'AA17TT4', 'TKDH', 'HSGIOI', 2500)
 
 INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211TM3069', 'LeThanh', '03/12/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'BB17TT4', 'MMT', 'HSYEU', 2200)
-
-INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211DH3069', 'ChiTan', '12/13/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'DD17TT4', 'TKDH', 'HSKHA', 2200)
-
-INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211TT3069', 'VanQuyen', '05/22/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'CD17TT4', 'CNTT', 'HSGIOI', 2200)
-
-INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211TT3069', 'VanTung', '08/23/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'CD17TT5', 'CNTT', 'HSYEU', 2200)
-
-INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211DH3069', 'NgoHuuThe', '11/30/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'DD17TT5', 'TKDH', 'HSGIOI', 2200)
-
-
-DELETE FROM NHANVIEN
+VALUES('17211TT3069', 'LeThanh', '03/12/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'BB17TT4', 'MMT', 'HSYEU', 2200)
 
 ---Them du lieu ChucVu----
 INSERT INTO CHUCVU(MaCV, TenCV)
@@ -64,10 +48,20 @@ VALUES('TKDH', 'ThietKeDoHoa')
 INSERT INTO CHUCVU(MaCV, TenCV)
 VALUES('MMT', 'MangMayTinh')
 
+---Them du lieu cho LUONG---
+INSERT INTO LUONG(BacLuong, LuongCB, HSLUONG, HSPhuCap)
+VALUES (2000, 150000, 50000, 10000)
+INSERT INTO LUONG(BacLuong, LuongCB, HSLUONG, HSPhuCap)
+VALUES (2500, 120000, 30000, 20000)
+INSERT INTO LUONG(BacLuong, LuongCB, HSLUONG, HSPhuCap)
+VALUES (2200, 140000, 10000, 30000)
 
+---Them du lieu cho HOPDONGLAODONG
+INSERT INTO HOPDONGLAODONG(MaNV, MaHD, LoaiHD, NgayBatDau, NgayKetThuc)
+VALUES('17211TT1738', 'ABC1', 'Nam', '01/01/2016', '02/09/2019')
+INSERT INTO HOPDONGLAODONG(MaNV, MaHD, LoaiHD, NgayBatDau, NgayKetThuc)
+VALUES('17211DD2014', 'XYZ2', 'Thang', '01/01/2019', '01/02/2019')
+INSERT INTO HOPDONGLAODONG(MaNV, MaHD, LoaiHD, NgayBatDau, NgayKetThuc)
+VALUES('17211TT3069', 'EBG3', 'Nam', '05/07/2017', '01/12/2019')
 
-
-
-
-
-
+DELETE FROM NHANVIEN
