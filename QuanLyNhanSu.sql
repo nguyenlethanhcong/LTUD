@@ -36,10 +36,25 @@ INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB
 VALUES('17211TT1738', 'TranDangKhoa', '01/01/1999', 'BinhThuan', 'Nam' , 'Kinh', 0364143265, 'CD17TT4', 'CNTT', 'HSKHA', 2000)
 
 INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211DD2014', 'NguyenThanhCong', '02/02/1999', 'NinhThuan', 'Nam' , 'Kinh', 0364548265, 'AA17TT4', 'TKDH', 'HSGIOI', 2500)
+VALUES('17211DH2014', 'NguyenThanhCong', '02/02/1999', 'NinhThuan', 'Nam' , 'Kinh', 0364548265, 'AA17TT4', 'TKDH', 'HSGIOI', 2500)
 
 INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
-VALUES('17211TT3069', 'LeThanh', '03/12/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'BB17TT4', 'MMT', 'HSYEU', 2200)
+VALUES('17211TM3069', 'LeThanh', '03/12/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'BB17TT4', 'MMT', 'HSYEU', 2200)
+
+INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
+VALUES('17211DH3069', 'ChiTan', '12/13/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'DD17TT4', 'TKDH', 'HSKHA', 2200)
+
+INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
+VALUES('17211TT3069', 'VanQuyen', '05/22/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'CD17TT4', 'CNTT', 'HSGIOI', 2200)
+
+INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
+VALUES('17211TT3069', 'VanTung', '08/23/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'CD17TT5', 'CNTT', 'HSYEU', 2200)
+
+INSERT INTO NHANVIEN(MaNV, HoTen, NgaySinh, QueQuan, GioiTinh, DanToc, SDT, MaPB, MaCV, MaTDHV, BacLuong)
+VALUES('17211DH3069', 'NgoHuuThe', '11/30/1999', 'QuangTri', 'Nam' , 'Kinh', 0365453265, 'DD17TT5', 'TKDH', 'HSGIOI', 2200)
+
+
+DELETE FROM NHANVIEN
 
 ---Them du lieu ChucVu----
 INSERT INTO CHUCVU(MaCV, TenCV)
@@ -49,7 +64,7 @@ VALUES('TKDH', 'ThietKeDoHoa')
 INSERT INTO CHUCVU(MaCV, TenCV)
 VALUES('MMT', 'MangMayTinh')
 
-DELETE FROM NHANVIEN
+
 
 
 
