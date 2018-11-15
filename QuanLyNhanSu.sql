@@ -1,3 +1,4 @@
+---Nguyễn Lê Thành Công---
 CREATE DATABASE QuanLyNhanSu
 USE QuanLyNhanSu
 
