@@ -205,3 +205,22 @@ GO
 --XEM LAI KHI SUA
 EXEC sp_LayDSPB
 GO
+
+--SP_SUA NHAN VIEN---
+CREATE PROCEDURE sp_SuaNV
+(
+	@MaNV VARCHAR(20), @HoTen NVARCHAR(50), @NgaySinh DATE, @QueQuan NVARCHAR(100), @GioiTinh NCHAR(5),
+	@DanToc NVARCHAR(20),@SDT INT ,@MaPB VARCHAR(20),@MaCV VARCHAR(20), @MaTDHV VARCHAR(20), @BacLuong FLOAT,
+	@NgayTangLuong DATE
+)
+AS
+    UPDATE NHANVIEN
+    SET MaNV = @MaNV , HoTen = @HoTen ,NgaySinh = @NgaySinh,QueQuan = @QueQuan, GioiTinh = @GioiTinh, DanToc = @DanToc,SDT= @SDT, MaPB = @MaPB,
+    MaCV = @MaCV, MaTDHV = @MaTDHV, BacLuong = @BacLuong, NgayTangLuong = @NgayTangLuong
+    WHERE MaNV = @MaNV
+--TESTSUA NHAN VIEN--- 
+EXEC sp_SuaNV '17001TT','Tran Dang Khoa', '01/01/1999','Binh Thuan', 'Nam','Kinh',0364143265,'KT001','GD','ccc',3.5,'12/20/2000'
+GO
+--XEM LAI KHI SUA
+EXEC sp_LayDSNV
+GO
